@@ -1,0 +1,221 @@
+############################
+# OS junk
+############################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux / misc
+*.swp
+*.swo
+*.swm
+*.swn
+*~
+.nfs*
+
+
+############################
+# Dependencies
+############################
+
+# Node.js
+node_modules/
+jspm_packages/
+
+# Bun
+.bun/
+
+# PHP Composer
+/vendor/
+
+# Python (if you have backend scripts)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env.py
+
+
+############################
+# Build outputs
+############################
+
+dist/
+build/
+out/
+public/build/
+public/dist/
+tmp/
+temp/
+.cache/
+.cache-loader/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.rollup.cache/
+.storybook-out/
+storybook-static/
+
+# Framework-specific
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+.angular/
+.ember-templates/
+.serverless/
+.functions/
+
+
+############################
+# Logs and diagnostics
+############################
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+
+############################
+# Environment config
+############################
+
+# Real secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Catch-all env variants
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+
+############################
+# Testing
+############################
+
+coverage/
+.nyc_output/
+pytest_cache/
+junit.xml
+cypress/screenshots/
+cypress/videos/
+playwright-report/
+test-results/
+
+
+############################
+# IDE / Editor
+############################
+
+# VS Code
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Other editor junk
+*.orig
+*.rej
+*.bak
+
+
+############################
+# Package manager artifacts
+############################
+
+# npm / Yarn / pnpm
+package-lock.json.lck
+yarn.lock.lck
+.pnp/
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Lockfiles to keep 
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+
+############################
+# Assets processed outputs
+############################
+
+# Compiled CSS
+*.css.map
+*.scssc
+.sass-cache/
+
+# Optimized/generated images
+*.min.js
+*.min.css
+
+
+############################
+# Hosting / deployment
+############################
+
+.vercel/
+.netlify/
+.firebase/
+firebase-debug.log
+.now/
+functions/node_modules/
+.amplify/
+serverless/
+.clasp.json
+
+
+############################
+# Misc project files
+############################
+
+*.tgz
+*.gz
+*.zip
+*.tar
+*.tar.gz
+*.tmp
+
+# Local data
+*.local.db
+*.sqlite
+*.sqlite3
+
+# Design tools exports
+*.sketchbackup
+*.psd.tmp
