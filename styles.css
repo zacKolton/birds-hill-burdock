@@ -13,7 +13,8 @@ body {
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: #222;
-    background-color: #fdfdfd;
+    background-color: #0f292d;
+    /* outer background */
     line-height: 1.5;
 }
 
@@ -23,8 +24,22 @@ img {
     display: block;
 }
 
+/* Core column: hero, main, footer all share width rules */
+
+.hero,
+main,
+.site-footer {
+    width: 100%;
+    /*max-width: 960px; */
+    /* grows on desktop, full width on phones */
+    margin: 0 auto;
+}
+
+/* Main content area */
+
 main {
-    padding: 1.5rem 1rem 3rem;
+    padding: 1.5rem 1rem 2rem;
+    background-color: #fdfdfd;
 }
 
 section {
@@ -49,6 +64,7 @@ h3 {
     background-size: cover;
     background-position: center;
     color: #fff;
+    background-color: #555;
 }
 
 .hero::before {
@@ -69,14 +85,19 @@ h3 {
     letter-spacing: 0.04em;
 }
 
-/* Feature block */
+/* Feature block: image left, text right (as in mock) */
 
 .feature {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1.5rem;
     align-items: center;
     margin-top: 2rem;
+}
+
+.feature-image {
+    display: flex;
+    justify-content: center;
 }
 
 .feature-text p {
@@ -84,7 +105,7 @@ h3 {
     font-size: 1.05rem;
 }
 
-/* Products */
+/* Section headers */
 
 .products h2,
 .about h2,
@@ -94,9 +115,11 @@ h3 {
     margin-bottom: 1rem;
 }
 
+/* Products: 2x2 grid even on phone */
+
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
@@ -134,11 +157,11 @@ h3 {
     background-color: #eeeeee;
 }
 
-/* Media */
+/* Media: 2-column stack */
 
 .media-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
 }
 
@@ -146,7 +169,7 @@ h3 {
     width: 100%;
 }
 
-/* Generic boxed text */
+/* Generic boxed text for About and Contact */
 
 .boxed-text {
     padding: 1rem;
@@ -162,33 +185,9 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fdfdfd;
 }
 
 .site-footer img {
     max-height: 40px;
-}
-
-/* Layout for wider screens */
-
-@media (min-width: 640px) {
-    main {
-        max-width: 960px;
-        margin: 0 auto 3rem;
-        padding-inline: 1.5rem;
-    }
-
-    .product-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .media-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (min-width: 768px) {
-    .feature {
-        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-        gap: 2rem;
-    }
 }
