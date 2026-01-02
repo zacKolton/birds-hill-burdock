@@ -2,7 +2,7 @@
 
 const TEXT_HEADER = "Birds Hill Burdock";
 
-const TEXT_SLOGAN = "Unforgettable cases for your wireless earphone charger";
+const TEXT_SLOGAN = "An unforgettable case for your wireless earphone charger";
 
 const TEXT_HEADER_PRODUCTS = "Products";
 const TEXT_HEADER_ABOUT = "About";
