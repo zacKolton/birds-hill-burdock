@@ -1,3 +1,27 @@
+function openImageModal(src, alt) {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("image-modal-img");
+    if (!modal || !modalImg) return;
+
+    modalImg.src = src;
+    modalImg.alt = alt || "";
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+}
+
+function closeImageModal() {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("image-modal-img");
+    if (!modal) return;
+
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    if (modalImg) {
+        modalImg.src = "";
+        modalImg.alt = "";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Header text and background
     const heroSection = document.querySelector(".hero");
@@ -44,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // About text
     const aboutTextEl = document.getElementById("about-text");
-    if (aboutTextEl && typeof TEXT_CONTENT_ABOUT === "string") {
-        aboutTextEl.textContent = TEXT_CONTENT_ABOUT;
+    if (aboutTextEl && typeof TEXT_CONTENT_ANOUT === "string") {
+        aboutTextEl.textContent = TEXT_CONTENT_ANOUT;
     }
 
     // Contact text
@@ -65,6 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
             img.className = "product-image";
             img.src = product.logo_path;
             img.alt = product.name || "Product image";
+
+            // click-to-expand
+            img.addEventListener("click", function () {
+                openImageModal(product.logo_path, product.name || "Product image");
+            });
 
             const nameEl = document.createElement("h3");
             nameEl.className = "product-name";
@@ -108,5 +137,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerLogoEl = document.getElementById("footer-logo");
     if (footerLogoEl && typeof IMAGE_LOGO_FOOTER === "string") {
         footerLogoEl.src = IMAGE_LOGO_FOOTER;
+    }
+
+    // Modal close button
+    const closeBtn = document.querySelector(".image-modal-close");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeImageModal);
     }
 });

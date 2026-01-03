@@ -10,7 +10,7 @@ const TEXT_HEADER_MEDIA = "Media";
 const TEXT_HEADER_CONTACT = "Contact";
 
 const TEXT_CONTENT_ABOUT =
-    "";
+    "This product was made to help you remember where your wireless earphones are. It doesn't require bluetooth, RFID, or extra apps.";
 
 const TEXT_CONTENT_CONTACT =
     "burdock.brand@gmail.com";

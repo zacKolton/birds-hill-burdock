@@ -194,3 +194,56 @@ h3 {
 .site-footer img {
     max-height: 40px;
 }
+
+/* Image modal */
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.image-modal.is-open {
+    display: flex;
+}
+
+.image-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.image-modal-content {
+    position: relative;
+    z-index: 1;
+
+    /* phone: nearly full width, desktop: capped */
+    width: 90vw;
+    max-width: 600px;
+    max-height: 80vh;
+}
+
+.image-modal-content img {
+    width: 100%;
+    max-height: 80vh;
+    height: auto;
+    border-radius: 4px;
+    background: #ffffff;
+    object-fit: contain;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: -32px;
+    right: -8px;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+}
