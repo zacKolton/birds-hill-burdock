@@ -1,3 +1,6 @@
+/* by default, 1rem is equal to 16px */
+
+
 *,
 *::before,
 *::after {
@@ -124,7 +127,7 @@ h3 {
 }
 
 .product-card {
-    border: 1px solid #dddddd;
+    /* border: 1px solid #dddddd; */
     padding: 1rem;
     background-color: #ffffff;
 }
@@ -146,7 +149,7 @@ h3 {
 .product-buy {
     display: inline-block;
     border-radius: 999px;
-    border: 1px solid #555555;
+    /* border: 1px solid #555555; */
     padding: 0.4rem 1.1rem;
     font-size: 0.9rem;
     background: transparent;
@@ -173,7 +176,7 @@ h3 {
 
 .boxed-text {
     padding: 1rem;
-    border: 1px solid #dddddd;
+    /* border: 1px solid #dddddd; */
     background-color: #ffffff;
 }
 
