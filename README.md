@@ -105,7 +105,7 @@ This notice is governed by the laws applicable in Canada, without limiting any r
 
 ## 13) Contact for permissions
 
-Permissions requests and legal notices: **[INSERT EMAIL / CONTACT FORM URL]**
+Permissions requests and legal notices: **burdock.brand@gmail.com**
 
 [1]: https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright-learn-basics/copyright-learn-basics-protect-your-original-works-learn-why-copyright-matters?utm_source=chatgpt.com "Copyright – Learn the basics Protect your original works ..."
 [2]: https://ised-isde.canada.ca/site/ised/en/terms-and-conditions/about-copyright?utm_source=chatgpt.com "About copyright"
